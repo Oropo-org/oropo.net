@@ -17,15 +17,15 @@
 */
 
 
-function php_file_tree($directory, $return_link, $extensions = array()) {
+function php_file_tree($directory, $base_uri, $extensions = array()) {
 	// Generates a valid XHTML list of all directories, sub-directories, and files in $directory
 	// Remove trailing slash
 	if( substr($directory, -1) == "/" ) $directory = substr($directory, 0, strlen($directory) - 1);
-	$code .= php_file_tree_dir($directory, $return_link, $extensions);
+	$code .= php_file_tree_dir($directory, $base_uri, $extensions);
 	return $code;
 }
 
-function php_file_tree_dir($directory, $return_link, $extensions = array(), $first_call = true) {
+function php_file_tree_dir($directory, $base_uri, $extensions = array(), $first_call = true) {
 	// Recursive function called by php_file_tree() to list directories/files
 	
 	// Get and sort directories/files
@@ -57,14 +57,17 @@ function php_file_tree_dir($directory, $return_link, $extensions = array(), $fir
 				if( is_dir("$directory/$this_file") ) {
 					// Directory
 					$php_file_tree .= "<li class=\"pft-directory\"><a href=\"#\">" . htmlspecialchars($this_file) . "</a>";
-					$php_file_tree .= php_file_tree_dir("$directory/$this_file", $return_link ,$extensions, false);
+					$php_file_tree .= php_file_tree_dir("$directory/$this_file", $base_uri ,$extensions, false);
 					$php_file_tree .= "</li>";
 				} else {
 					// File
 					// Get extension (prepend 'ext-' to prevent invalid classes from extensions that begin with numbers)
 					$ext = "ext-" . substr($this_file, strrpos($this_file, ".") + 1); 
-					$link = str_replace("[link]", "$directory/" . urlencode($this_file), $return_link);
-					$php_file_tree .= "<li class=\"pft-file " . strtolower($ext) . "\"><a href=\"$link\">" . htmlspecialchars($this_file) . "</a></li>";
+#					$link = str_replace("[link]", "$directory/" . urlencode($this_file), $base_uri);
+                    $startPos = strrpos($directory, "wp-content/");
+                    $link = substr($directory, $startPos);
+                    $link = $base_uri . "/" . $link . "/" .  $this_file;
+					$php_file_tree .= "<li class=\"pft-file " . strtolower($ext) . "\"><a href=\"$link\" download>" . htmlspecialchars($this_file) . "</a></li>";
 				}
 			}
 		}
