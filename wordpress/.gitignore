@@ -1,0 +1,8 @@
+# Don't keep config files
+wp-config.php
+wp-config.php*
+
+# Don't keep database and other stuff...
+dump.sql
+dumpLocalUrls.sql
+temp.sh
