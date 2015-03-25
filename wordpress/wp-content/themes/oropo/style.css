@@ -1,0 +1,734 @@
+/******************************************************************
+Theme Name: ORoPO
+Theme URI: http://www.pynkandfluffy.com
+Author: Dan Hurell
+Author URI: http://www.pynkandfluffy.com
+Version: 1.0
+*******************************************************************/
+
+/******************************************************************
+BODY
+*******************************************************************/
+BODY {
+	font-family: 'Roboto', sans-serif;
+	color: #393939;
+	font-weight: 300;
+	font-size: 1em;
+}
+/******************************************************************
+WRAPPERS
+*******************************************************************/
+.wrapper {
+	width: 100%;
+	padding: 70px 0;
+	background-color: #FFFFFF;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center; 
+}
+.hero,
+.hero-content,
+#hero-wrapper {
+	height: 670px;
+}
+#hero-wrapper {
+	padding: 0px;
+}
+#responsive-hero-wrapper {
+	padding: 0px;
+	display: none;
+}
+/*
+#mission-wrapper {
+	background-color: #DDDEDD;
+}
+*/
+#news-wrapper {
+	background-color: #DDDEDD;
+}
+#policy-wrapper {
+	background-color: #DDDEDD;
+}
+#links-wrapper {
+	background-color: #777877;
+	padding: 60px 0;
+}
+#contact-image-wrapper {
+	height: 315px;
+	padding-top: 220px;
+}
+.post-wrapper {
+	background-color: #f8f8f8;
+	padding: 40px 0;
+}
+#post-nav-wrapper {
+	padding: 30px 0;
+}
+#footer {
+	background-color: #000000;
+	padding: 50px 0;
+}
+/******************************************************************
+HEADINGS
+*******************************************************************/
+h1 {
+	font-size: 2.250em;
+	margin: 0 0 40px 0;
+	color: #393939;
+	line-height: 120%;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+h1.hero-heading {
+	font-size: 2.750em;
+	margin: 0;
+	color: #FFFFFF;
+	line-height: 110%;
+	font-weight: 300;
+	text-transform: none;
+	width: 80%;
+}
+h2 {
+	font-size: 2.250em;
+	margin: 0 0 40px 0;
+	color: #393939;
+	line-height: 120%;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+h2.strapline {
+	font-size: 1em;
+	color: #393939;
+	line-height: 110%;
+	text-transform: none;
+	font-weight: 300;
+}
+h2.hero-title {
+	font-size: 1.438em;
+	margin: 0 0 14px 0;
+	color: #FFFFFF;
+	line-height: 120%;
+	font-weight: 300;
+	text-transform: none;
+}
+h2.post-title {
+	margin: 0 0 20px 0;
+	color: #E47822;
+	font-weight: 700;
+	font-size: 0.875em;
+}
+h3 {
+	font-size: 0.875em;
+	margin: 0 0 14px 0;
+	color: #777877;
+	line-height: 120%;
+	font-weight: 400;
+	text-transform: uppercase;
+}
+h3.widget-title {
+	font-size: 0.875em;
+	padding: 10px;
+	color: #FFFFFF;
+	line-height: 100%;
+	background-color: #777877;
+}
+h4 {
+	font-size: 0.875em;
+	margin: 0 0 14px 0;
+	color: #777877;
+	line-height: 120%;
+	font-weight: 400;
+	text-transform: uppercase;
+}
+h4.name {
+	margin: 0 0 5px 0;
+	color: #393939;
+	font-weight: 700;
+	font-size: 0.875em;
+}
+h4.contact-title {
+	margin: 0 0 14px 0;
+	color: #393939;
+	font-weight: 400;
+}
+h4.role-title {
+	font-size: 1.5em;
+	margin: 50px 0 25px 0;
+	color: #DDDEDD;
+	line-height: 120%;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+/******************************************************************
+PARAGRAPHS
+*******************************************************************/
+
+.mission-content ul li,
+p {
+	font-size: 0.875em;
+	font-weight: 300;
+	line-height: 150%;
+	color: #393939;
+	margin: 0 0 20px 0;
+}
+p.job-title,
+p.post-date {
+	color: #E47823;
+	margin: 0 0 10px 0;
+	font-weight: 700;
+}
+p.job-title {
+	color: #E47823;
+	margin-bottom: 15px;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+.footer p {
+	color: #FFFFFF;
+}
+/******************************************************************
+LINKS
+*******************************************************************/
+a {
+	color: #393939;
+	text-decoration: none;
+	-webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+	outline: 0;
+}
+a:hover {
+	color: #E47823;
+}
+a.btn {
+	padding: 12px 24px;
+	color: #FFFFFF;
+	background-color: #E47822;
+	display: inline-block;
+	text-transform: uppercase;
+	font-size: 1em;
+	-webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+}
+a.btn:hover {
+	background-color: #393939;
+}
+a.scrollup-center {
+	left: 50%;
+	transform: translateX(-50%);
+}
+a.scrollup-pill {
+	background: #E47823;
+	font-size: 1em;
+	font-family: 'Roboto', sans-serif;
+	opacity: .6;
+	font-weight: 900;
+	padding: 6px 14px;
+}
+a.scrollup-pill:hover {
+	background: #E47823;
+	opacity: 1;
+}
+/******************************************************************
+VERTICALLY CENTER
+*******************************************************************/
+.vertical-align {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform:    translateY(-50%);
+  -ms-transform:     translateY(-50%);
+  -o-transform:      translateY(-50%);
+  transform: translateY(-50%);
+}
+/******************************************************************
+HEADER
+*******************************************************************/
+#header {
+	padding: 25px 0;
+	background-color: #FFFFFF;
+	position: fixed;
+	width: 100%;
+	top: 0;
+	z-index: 100000;
+	-webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+.strapline {
+	max-width: 145px;
+	margin: 6px 0 0 35px;
+	text-transform: none;
+}
+#header-right {
+	text-align: right;
+}
+/******************************************************************
+NAV
+*******************************************************************/
+[data-magellan-expedition], [data-magellan-expedition-clone] {
+	padding: 0px;
+}
+.slicknav_menu,
+#responsive-nav {
+	display: none;
+}
+#main-nav dl dd {
+  margin-bottom: 0;
+}
+#main-nav dt, #main-nav dd, #main-nav li {
+	float: right;
+	margin-left: 2rem;
+	margin-right: 0;
+	font-family: 'Roboto', sans-serif;
+	font-weight: normal;
+	font-size: 0.875rem;
+	color: #777877;
+	text-transform: uppercase;
+}
+#main-nav dt a, #main-nav dd a, #main-nav li a {
+	color: #777877;
+	padding: 0;
+}
+#main-nav dt.active a, #main-nav dd.active a, #main-nav li.active a {
+	border-radius: 0;
+	background: none;
+	padding: 0;
+	color: #E47823;
+}
+#main-nav dt a:hover, #main-nav dd a:hover, #main-nav li a:hover, 
+#main-nav dt.active a:hover, #main-nav dd.active a:hover, #main-nav li.active a:hover {
+	color: #E47823;
+	background: none;
+}
+/******************************************************************
+HERO
+*******************************************************************/
+.hero-copy {
+	position: absolute;
+	bottom: 100px;
+}
+/******************************************************************
+MISSION
+*******************************************************************/
+
+/******************************************************************
+NEWS
+*******************************************************************/
+.article-content {
+	padding: 25px;
+	background-color: #FFFFFF;
+}
+/******************************************************************
+TEAM
+*******************************************************************/
+.person-content {
+	padding: 20px 0 0 0;
+	background-color: #FFFFFF;
+}
+/******************************************************************
+POLICY
+*******************************************************************/
+#policy-right {
+	text-align: right;
+}
+/******************************************************************
+CONTACT
+*******************************************************************/
+.contact-icon {
+	padding-right: 30px;
+}
+.contact-icon .fa-stack {
+	width: 4.250em;
+	height: 4.250em;
+}
+.contact-icon .fa-stack-2x {
+	font-size: 4.250em;
+}
+.contact-icon .fa-stack-1x {
+	line-height: 2.875em;
+	font-size: 1.5em;
+}
+.contact-details a {
+	color:#E47823;
+}
+.contact-details a:hover {
+	color: #393939;
+}
+.contact-copy {
+	padding: 5px 0 0 0;
+}
+.contact-details a .contact-copy P {
+	color:#777877;
+}
+.contact-details a:hover .contact-copy P {
+	color:#E47823;
+}
+/******************************************************************
+POSTS
+*******************************************************************/
+#main {
+	margin-top: 95px;
+	padding-bottom: 40px;
+}
+.post #left-col {
+	background-color: #FFFFFF;
+	padding-top: 0.9375em;
+}
+.post #left-col ul {
+	padding-left: 20px;
+}
+.post #left-col li {
+	font-size: 0.875em;
+	font-weight: 300;
+	line-height: 150%;
+	marign-bottom: 10px;
+}
+.post .featured-image {
+	margin-bottom: 30px;
+	
+	width: 100%;
+	height: auto;
+}
+.post #right-col {
+	padding-left: 60px;
+}
+.post-navigation p {
+	margin: 0px;
+}
+blockquote {
+	margin: 0 0 1.25rem;
+	padding: 20px 20px 5px 20px;
+	border-left: 1px solid #E47823;
+	background-color: #F9F9F9;
+	
+}
+blockquote p {
+	font-style: italic;
+	font-size: 1em;
+	color: #E47823;
+	font-weight: 400;
+	
+}
+blockquote + p {
+    margin-bottom: 0;
+}
+
+
+/******************************************************************
+WIDGETS
+*******************************************************************/
+.widget {
+	margin-bottom: 40px;
+}
+.blog-menu ul {
+	margin-left: 0px;
+	padding: 0 10px;
+}
+.blog-menu ul li {
+	list-style: none;
+	font-weight: 400;
+	font-size: 0.813em;
+}
+.blog-menu ul li A {
+	color:#777877;
+}
+.blog-menu ul li A:hover {
+	color:#E47823;
+}
+#recent-posts-2 ul li {
+	line-height: 120%;
+	margin-bottom: 15px;
+}
+/******************************************************************
+LINKS
+*******************************************************************/
+.links-content {
+	text-align: center;
+}
+ul.links-list {
+	margin: 0px;
+}
+ul.links-list li {
+	list-type: none;
+	display: inline;
+}
+ul.links-list li a {
+	color:#FFFFFF;
+}
+ul.links-list li a:hover {
+	color:#E47823;
+}
+ul.links-list li a .fa-stack-1x {
+	color: #393939;
+}
+ul.links-list li a:hover .fa-stack-1x {
+	color: #FFFFFF;
+}
+/******************************************************************
+FOOTER
+*******************************************************************/
+.footer {
+	text-align: center;
+}
+.footer a { 
+	color: #FFFFFF;
+	font-weight: 700;
+}
+.footer a:hover { 
+	color: #E47822;
+}
+/******************************************************************
+MEDIA QUERIES - SMALL
+*******************************************************************/
+@media only screen and (max-width: 53em) {
+/******************************************************************
+WRAPPERS
+*******************************************************************/
+.hero,
+.hero-content,
+#hero-wrapper {
+	height: 570px;
+}
+#contact-image-wrapper {
+	padding-top: 180px;
+}
+#contact-details-wrapper {
+	padding: 40px 0;
+}
+/******************************************************************
+TITLES
+*******************************************************************/
+h1.hero-heading {
+	width: 100%;
+}
+h2.strapline {
+	font-size: 0.875em;
+}
+/******************************************************************
+LINKS
+*******************************************************************/
+a.btn {
+	padding: 10px 10px;
+	font-size: 0.933em;
+}
+/******************************************************************
+HEADER
+*******************************************************************/
+#header {
+	padding: 15px 0;
+}
+#header .logo {
+	max-height: 35px;
+}
+.strapline {
+  max-width: 145px;
+  margin: 2px 0 0 25px;
+  text-transform: none;
+}
+/******************************************************************
+NAV
+*******************************************************************/
+#main-nav {
+	display: none;
+}
+#main-nav dt, #main-nav dd, #main-nav li {
+	margin-left: 1.5rem;
+}
+.slicknav_menu {
+	display: block;
+	z-index: 10000001;
+	position: fixed;
+	right: 0;
+	top: 18px;
+	width: 100%;
+	background: transparent;
+	padding: 0px;
+}
+.slicknav_btn {
+	margin: 0;
+	text-decoration: none;
+	text-shadow: none;
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	border-radius: 0;
+	background: none;
+}
+.slicknav_menu .slicknav_icon-bar {
+	background-color: #393939;
+}
+.slicknav_menu .slicknav_icon-bar {
+	width: 1.063em;
+	height: 0.188em;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+}
+.slicknav_btn:hover .slicknav_icon-bar {
+	background-color: #E47822;
+}
+.slicknav_nav {
+	margin-top: 45px;
+	background-color: #FFFFFF;
+}
+ul.slicknav_nav {
+    -moz-transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+ul.slicknav_nav > li {
+    -moz-transform: rotate(-180deg);
+    -webkit-transform: rotate(-180deg);
+    transform: rotate(-180deg);
+}
+.slicknav_nav li {
+	text-align: right;
+}
+.slicknav_nav a {
+  	font-family: 'Roboto', sans-serif;
+	font-weight: normal;
+	font-size: 0.875rem;
+	color: #777877;
+	text-transform: uppercase;
+	text-align: right;
+}
+.slicknav_nav a:hover{
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+    background:#E47822;
+    color:#FFFFFF;
+}
+/******************************************************************
+HERO
+*******************************************************************/
+.hero-copy {
+	bottom: 60px;
+}
+/******************************************************************
+CONTACT
+*******************************************************************/
+.contact-icon {
+	clear: both;
+	width: 100%;
+	text-align: center;
+	padding-right: 0px;
+}
+.contact-copy {
+	padding: 10px 0 0 0;
+	text-align: center;
+	width: 100%;
+}
+}
+@media only screen and (max-width: 40em) {
+/******************************************************************
+WRAPPERS
+*******************************************************************/
+.wrapper {
+	padding: 50px 0;
+}
+.hero,
+.hero-content,
+#responsive-hero-wrapper {
+	height: auto;
+}
+#hero-wrapper {
+	display: none;
+}
+#responsive-hero-wrapper {
+	display: block;
+	margin-top: 50px;
+	background-color: #393939;
+}
+#contact-image-wrapper {
+	height: 250px;
+	padding-top: 100px;
+}
+#links-wrapper {
+	padding: 30px 0;
+}
+/******************************************************************
+HEADINGS
+*******************************************************************/
+h1.hero-heading {
+	font-size: 2em;
+	color: #FFFFFF;
+}
+h2 {
+	font-size: 2em;
+}
+h2.hero-title {
+	font-size: 1em;
+	font-weight: 400;
+	color: #FFFFFF;
+}
+/******************************************************************
+LINKS
+*******************************************************************/
+a.scrollup-center {
+	right: 0.9375em;
+	transform: none;
+	left: auto;
+}
+
+/******************************************************************
+HERO
+*******************************************************************/
+.hero-copy {
+	position: relative;
+	bottom: 0;
+	padding: 20px 0;
+}
+.contact-image-content h2,
+.contact-image-content h3 {
+	color: #FFFFFF;
+}
+/******************************************************************
+POLICY
+*******************************************************************/
+#policy-right {
+	text-align: left;
+}
+.vertical-align {
+  position: relative;
+  top: 0%;
+  -webkit-transform: translateY(0%);
+  -moz-transform:    translateY(0%);
+  -ms-transform:     translateY(0%);
+  -o-transform:      translateY(0%);
+  transform: translateY(0%);
+}
+}
+
+@media only screen { }
+
+/******************************************************************
+MEDIA QUERIES - MENDIUM
+*******************************************************************/
+@media only screen and (min-width: 40.063em) and (max-width: 64em) {
+}
+
+@media only screen and (min-width: 40.063em) {}
+@media only screen and (max-width: 75em) {}
+/******************************************************************
+MEDIA QUERIES - LARGE
+*******************************************************************/
+@media only screen and (min-width: 64.063em) and (max-width: 90em) { }
+@media only screen and (min-width: 64.063em) {}
+@media only screen and (min-width: 75.063em) {}
+
+/******************************************************************
+MEDIA QUERIES - EXTRA LARGE
+*******************************************************************/
+@media only screen and (min-width: 90.063em) and (max-width: 120em) { }
+
+
+/******************************************************************
+MEDIA QUERIES - EXTRA EXTRA LARGE
+*******************************************************************/
+@media only screen and (min-width: 120.063em) and (max-width: 99999999em) { }
+@media only screen and (min-width: 120.063em) { }
