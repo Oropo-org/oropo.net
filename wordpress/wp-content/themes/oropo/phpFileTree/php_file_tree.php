@@ -50,13 +50,13 @@ function php_file_tree_dir($directory, $base_uri, $extensions = array(), $first_
 	
 	if( count($file) > 2 ) { // Use 2 instead of 0 to account for . and .. "directories"
 		$php_file_tree = "<ul";
-		if( $first_call ) { $php_file_tree .= " class=\"php-file-tree\""; $first_call = false; }
+		if( $first_call ) { $php_file_tree .= " class=\"small-block-grid-2 medium-block-grid-3 large-block-grid-4 php-file-tree\""; $first_call = false; }
 		$php_file_tree .= ">";
 		foreach( $file as $this_file ) {
 			if( $this_file != "." && $this_file != ".." ) {
 				if( is_dir("$directory/$this_file") ) {
 					// Directory
-					$php_file_tree .= "<li class=\"pft-directory\"><a href=\"#\">" . htmlspecialchars($this_file) . "</a>";
+					$php_file_tree .= "<li class=\"pft-directory\"><a href=\"#\"><span class=\"fa-stack fa-lg\"><i class=\"fa fa-circle fa-stack-2x\"></i><i class=\"fa fa-folder-o fa-stack-1x fa-inverse\"></i></span>" . htmlspecialchars($this_file) . "</a>";
 					$php_file_tree .= php_file_tree_dir("$directory/$this_file", $base_uri ,$extensions, false);
 					$php_file_tree .= "</li>";
 				} else {

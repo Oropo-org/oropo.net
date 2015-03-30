@@ -70,7 +70,7 @@
 				$label = get_sub_field('label');
 				$destination = get_sub_field('destination');
 				?>
-                <?php if($destination == 'downloads' ) : ?>
+                <?php if($destination == 'the-register' ) : ?>
                     <dd data-magellan-arrival="<?php echo $destination; ?>"><a href="/<?php echo $destination; ?>"><?php echo $label; ?></a></dd>
                     <?php else: ?>
                     <dd data-magellan-arrival="<?php echo $destination; ?>"><a href="/#<?php echo $destination; ?>"><?php echo $label; ?></a></dd>
@@ -88,12 +88,12 @@
 				$destination = get_sub_field('destination');
 				
 				?>
-                TEST 1
-                <?php if($destination == 'downloads' ) : ?>
-                TEST 2
+    
+                <?php if($destination == 'the-register' ) : ?>
+        
                 	<li><a href="/<?php echo $destination; ?>"><?php echo $label; ?></a></li>
                 <?php else: ?>
-                TEST 3
+           
                     <li><a href="#<?php echo $destination; ?>"><?php echo $label; ?></a></li>
                 <?php endif; ?>
                   <?php endwhile; ?>         

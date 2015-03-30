@@ -61,6 +61,7 @@ function bones_scripts_and_styles() {
 		wp_register_style( 'foundation-stylesheet', get_stylesheet_directory_uri() . '/css/foundation.css', array(), '', 'all' );
 		wp_register_style( 'fontawesome-stylesheet', get_stylesheet_directory_uri() . '/css/font-awesome.min.css', array(), '', 'all' );
 		wp_register_style( 'slicknav-stylesheet', get_stylesheet_directory_uri() . '/css/slicknav.css', array(), '', 'all' );
+		wp_register_style( 'filelist-stylesheet', get_stylesheet_directory_uri() . '/phpFileTree/styles/default/default.css', array(), '', 'all' );
 		wp_register_style( 'main-stylesheet', get_stylesheet_directory_uri() . '/style.css', array(), '', 'all' );
 		//adding scripts file in the footer
 		wp_register_script( 'jquery-js', 'http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js', array(), '', true );
@@ -68,6 +69,7 @@ function bones_scripts_and_styles() {
 		wp_register_script( 'equalizer-js', get_stylesheet_directory_uri() . '/js/foundation/foundation.equalizer.js', array(), '', true );
 		wp_register_script( 'magellan-js', get_stylesheet_directory_uri() . '/js/foundation/foundation.magellan.js', array(), '', true );
 		wp_register_script( 'slicknav-js', get_stylesheet_directory_uri() . '/js/jquery.slicknav.min.js', array(), '', true );
+		wp_register_script( 'filelist-js', get_template_directory_uri() . '/phpFileTree/php_file_tree_jquery.js', array(), '', true );
 		wp_register_script( 'oropo-js', get_stylesheet_directory_uri() . '/js/scripts.js', array(), '', true );
 		// enqueue styles and scripts
 		wp_enqueue_script( 'modernizr' );
@@ -75,12 +77,14 @@ function bones_scripts_and_styles() {
 		wp_enqueue_style( 'foundation-stylesheet' );
 		wp_enqueue_style( 'fontawesome-stylesheet' );
 		wp_enqueue_style( 'slicknav-stylesheet' );
+		wp_enqueue_style( 'filelist-stylesheet' );
 		wp_enqueue_style( 'main-stylesheet' );	
 		wp_enqueue_script( 'jquery-js' );
 		wp_enqueue_script( 'foundation-js' );
 		wp_enqueue_script( 'equalizer-js' );
 		wp_enqueue_script( 'magellan-js' );
 		wp_enqueue_script( 'slicknav-js' );
+		wp_enqueue_script( 'filelist-js' );
 		wp_enqueue_script( 'oropo-js' );
 	}
 }

@@ -111,17 +111,19 @@
         <div class="small-12 columns policy-content content-block">
             <h3><?php the_field('policy_title', 'options'); ?></h3>
             <h2><?php the_field('policy_heading', 'options'); ?></h2>    
-			<div class="row" data-equalizer>
-                <div id="policy-left" class="small-12 medium-8 columns" data-equalizer-watch>
-                	<div class="vertical-align">
+			<div class="row">
+                <div id="policy-left" class="small-12 columns">
+                	<!--<div class="vertical-align">-->
                     	<?php the_field('policy_copy', 'options'); ?>
-                    </div>
+                    <!--</div>-->
                 </div>
+                <!--
                 <div id="policy-right" class="small-12 medium-4 columns" data-equalizer-watch>
                 	<div class="vertical-align">
                     	<A href="<?php the_field('policy_doc', 'options'); ?>" class="btn"><?php the_field('policy_cta', 'options'); ?></A>  
                     </div>  
                 </div>
+                -->
     		</div>
         </div>
     </div>

@@ -5,33 +5,19 @@
 
 */
 
-.php-file-tree {
-	font-family: Georgia;
-	font-size: 12px;
-	letter-spacing: 1px;	line-height: 1.5;
-}
 
-	.php-file-tree A {
-		color: #000000;
-		text-decoration: none;
+	.php-file-tree,
+.php-file-tree LI {
+		list-style: none;
 	}
 	
-	.php-file-tree A:hover {
-		color: #666666;
+	.pft-directory ul {
+		padding-left: 1px;
 	}
-
-	.php-file-tree .open {
-		font-style: italic;
+	.php-file-tree LI.pft-file {
+		margin: 0.5em 1em;
+		
 	}
-	
-	.php-file-tree .closed {
-		font-style: normal;
-	}
-	
-	.php-file-tree .pft-directory {
-		list-style-image: url(images/directory.png);
-	}
-	
 	/* Default file */
 	.php-file-tree LI.pft-file { list-style-image: url(images/file.png); }
 	/* Additional file types */

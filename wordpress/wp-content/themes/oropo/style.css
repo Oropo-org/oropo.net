@@ -10,7 +10,7 @@ Version: 1.0
 BODY
 *******************************************************************/
 BODY {
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Lato', sans-serif;
 	color: #393939;
 	font-weight: 300;
 	font-size: 1em;
@@ -166,7 +166,7 @@ PARAGRAPHS
 
 .mission-content ul li,
 p {
-	font-size: 0.875em;
+	font-size: 1em;
 	font-weight: 300;
 	line-height: 150%;
 	color: #393939;
@@ -383,7 +383,7 @@ POSTS
 	padding-left: 20px;
 }
 .post #left-col li {
-	font-size: 0.875em;
+	font-size: 1em;
 	font-weight: 300;
 	line-height: 150%;
 	marign-bottom: 10px;
@@ -409,13 +409,27 @@ blockquote {
 }
 blockquote p {
 	font-style: italic;
-	font-size: 1em;
+	font-size: 1.5em;
 	color: #E47823;
 	font-weight: 400;
 	
 }
 blockquote + p {
     margin-bottom: 0;
+}
+
+blockquote.dataform {
+	margin: 0 0 1.25rem;
+	padding: 4px 4px 4px 40px;
+	border-left: none;
+	background-color: #F9F9F9;
+}
+
+blockquote.dataform p {
+	font-style: normal;
+	font-size: 1em;
+	color: #000000;
+	font-weight: 100;
 }
 
 
@@ -507,14 +521,14 @@ h1.hero-heading {
 	width: 100%;
 }
 h2.strapline {
-	font-size: 0.875em;
+	font-size: 1em;
 }
 /******************************************************************
 LINKS
 *******************************************************************/
 a.btn {
 	padding: 10px 10px;
-	font-size: 0.933em;
+	font-size: 1em;
 }
 /******************************************************************
 HEADER
