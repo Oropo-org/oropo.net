@@ -1,4 +1,4 @@
-<ul class="small-block-grid-2 medium-block-grid-3 team-list">
+<ul class="small-block-grid-2 medium-block-grid-4 team-list">
 	<?php while (have_posts()) : the_post(); ?>    
         <li class="person">
              <?php if ( has_post_thumbnail() ) : the_post_thumbnail('full-size'); endif; ?>
