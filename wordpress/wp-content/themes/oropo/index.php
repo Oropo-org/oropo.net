@@ -84,7 +84,7 @@
 			?>
             <?php if (have_posts()) : ?>
             	<h4 class="role-title"><?php the_field('directors_title', 'options'); ?></h4>
-            	<?php get_template_part('inc/person-list'); ?>
+            	<?php get_template_part('inc/directors-list'); ?>
             <?php endif;?>
             <?php wp_reset_query(); ?>
             <?php 
