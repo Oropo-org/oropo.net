@@ -114,13 +114,23 @@ abstract class CPAC_Storage_Model {
 	}
 
 	/**
+	 * Set menutype
+	 *
+	 * @since 2.4.1
+	 */
+	public function set_menu_type( $menu_type ) {
+		$this->menu_type = $menu_type;
+		return $this;
+	}
+
+	/**
 	 * Checks if menu type is currently viewed
 	 *
 	 * @since 1.0
 	 * @param string $key
 	 * @return bool
 	 */
-	public function is_menu_type_current( $first_posttpe ) {
+	public function is_menu_type_current( $first_posttype ) {
 
 		// display the page that was being viewed before saving
 		if ( ! empty( $_REQUEST['cpac_key'] ) ) {
@@ -129,7 +139,7 @@ abstract class CPAC_Storage_Model {
 			}
 
 		// settings page has not yet been saved
-		} elseif ( $first_posttpe == $this->key ) {
+		} elseif ( $first_posttype == $this->key ) {
 			return true;
 		}
 
@@ -260,12 +270,12 @@ abstract class CPAC_Storage_Model {
 		$result_default = update_option( "cpac_options_{$this->key}_default", array_keys( $this->get_default_columns() ) );
 
 		// error
-		if( ! $result && ! $result_default ) {
+		if ( ! $result && ! $result_default ) {
 			cpac_admin_message( sprintf( __( 'You are trying to store the same settings for %s.', 'cpac' ), "<strong>{$this->label}</strong>" ), 'error' );
 			return false;
 		}
 
-		cpac_admin_message( sprintf( __( 'Settings for %s updated succesfully.',  'cpac' ), "<strong>{$this->label}</strong>" ), 'updated' );
+		cpac_admin_message( sprintf( __( 'Settings for %s updated successfully.',  'cpac' ), "<strong>{$this->label}</strong>" ), 'updated' );
 
 		// refresh columns otherwise the newly added columns will not be displayed
 		$this->set_columns_on_current_screen();
@@ -892,6 +902,13 @@ abstract class CPAC_Storage_Model {
 
     	return $options[ $option ];
     }
+
+    /**
+	 * @since 2.4.2
+	 */
+	public function is_cache_enabled() {
+		return apply_filters( 'cac/is_cache_enabled', true );
+	}
 
 	/**
 	 * @since 3.1.2
