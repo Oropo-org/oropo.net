@@ -66,6 +66,13 @@
             	<?php if( have_rows('main_nav', 'options') ): ?>
             	<div data-magellan-expedition>
                   <dl>
+                    
+                      <!-- Temporary menu items for whitepaper/pressrelease -->
+                      <dd><a href="/news">News</a></dd>
+                      <dd><a href="/report">Report</a></dd>
+                      <!-- End of temporary menu items for whitepaper/pressrelease -->
+
+                      
                   <?php while( have_rows('main_nav', 'options') ): the_row(); 
 				$label = get_sub_field('label');
 				$destination = get_sub_field('destination');
@@ -75,7 +82,7 @@
                     <?php else: ?>
                     <dd data-magellan-arrival="<?php echo $destination; ?>"><a href="/#<?php echo $destination; ?>"><?php echo $label; ?></a></dd>
                    <?php endif; ?>
-                  <?php endwhile; ?>         
+                  <?php endwhile; ?>
                   </dl>
                 </div>
          	<?php endif; ?>   
