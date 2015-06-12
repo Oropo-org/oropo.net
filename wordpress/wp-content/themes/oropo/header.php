@@ -68,8 +68,8 @@
                   <dl>
                     
                       <!-- Temporary menu items for whitepaper/pressrelease -->
-                      <dd><a href="/news">News</a></dd>
-                      <dd><a href="/report">Report</a></dd>
+                      <!-- <dd><a href="/news">News</a></dd> -->
+                      <!-- <dd><a href="/report">Report</a></dd> -->
                       <!-- End of temporary menu items for whitepaper/pressrelease -->
 
                       
