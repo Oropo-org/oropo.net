@@ -72,7 +72,6 @@
                       <dd><a href="/report">Report</a></dd>
                       <!-- End of temporary menu items for whitepaper/pressrelease -->
 
-                      
                   <?php while( have_rows('main_nav', 'options') ): the_row(); 
 				$label = get_sub_field('label');
 				$destination = get_sub_field('destination');
@@ -90,6 +89,12 @@
             <nav id="responsive-nav" role="navigation">
             	<?php if( have_rows('main_nav', 'options') ): ?>
                   <ul id="responsive-sub-nav" class="sub-nav">
+
+                      <!-- Temporary menu items for whitepaper/pressrelease -->
+                      <li><a href="/news">News</a></li>
+                      <li><a href="/report">Report</a></li>
+                      <!-- End of temporary menu items for whitepaper/pressrelease -->
+                    
                   <?php while( have_rows('main_nav', 'options') ): the_row(); 
 				$label = get_sub_field('label');
 				$destination = get_sub_field('destination');
