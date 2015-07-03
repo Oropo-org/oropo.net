@@ -16,11 +16,10 @@ $BASE_URI           = get_site_url();
         <div class="small-12 columns">
             <h1><?php the_title(); ?></h1>
             <p><a class="btn" href="<?php echo get_site_url(); ?>/guidelines-for-providing-data/">Instructions for providing your data to Oropo</a></p>
-            <p>Downloads coming soon</p>
             
-            <!-- <p><a class="btn" href="<?php echo $ARCHIVE_URI; ?>">Download full Oropo dataset</a></p> -->
-            <!-- <p>To download individual company data, click on the folders below:</p> -->
-            <!-- <?php echo php_file_tree($BASE_PATH, $BASE_URI, array('txt', 'csv')); ?> -->
+            <p><a class="btn" href="<?php echo $ARCHIVE_URI; ?>">Download full Oropo dataset</a></p>
+            <p>To download individual company data, click on the folders below:</p>
+            <?php echo php_file_tree($BASE_PATH, $BASE_URI, array('txt', 'csv')); ?>
         </div>
     </div>
 </div>
