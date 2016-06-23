@@ -232,6 +232,13 @@ a.scrollup-pill:hover {
 	background: #E47823;
 	opacity: 1;
 }
+.single #left-col a {
+	color: #E47823;
+	font-weight: 400;
+}
+.single #left-col a:hover {
+	text-decoration: underline;
+}
 /******************************************************************
 VERTICALLY CENTER
 *******************************************************************/
@@ -323,6 +330,11 @@ NEWS
 	padding: 25px;
 	background-color: #FFFFFF;
 }
+/*.archive .article-content,
+.page-template-page-news .article-content {
+	padding: 25px;
+	background-color: #DDDEDD;
+}*/
 /******************************************************************
 TEAM
 *******************************************************************/
@@ -372,7 +384,7 @@ CONTACT
 POSTS
 *******************************************************************/
 #main {
-	margin-top: 95px;
+	margin-top: 155px;
 	padding-bottom: 40px;
 }
 .post #left-col {
@@ -637,6 +649,12 @@ CONTACT
 	text-align: center;
 	width: 100%;
 }
+#main {
+	margin-top: 95px;
+}
+.post #right-col {
+	padding-left: 40px;
+}
 }
 @media only screen and (max-width: 40em) {
 /******************************************************************
@@ -715,6 +733,11 @@ POLICY
   -ms-transform:     translateY(0%);
   -o-transform:      translateY(0%);
   transform: translateY(0%);
+}
+.post #right-col {
+	padding-left:0.9375rem;
+	padding-right:0.9375rem;
+	padding-top: 0.9375rem;
 }
 }
 
