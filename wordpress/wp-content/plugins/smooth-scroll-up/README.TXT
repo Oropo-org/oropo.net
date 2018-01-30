@@ -5,49 +5,31 @@ Author URI: http://www.kouratoras.gr
 Author: Konstantinos Kouratoras
 Contributors: kouratoras
 Tags: back to top, scroll to top, scroll, scroll top, scroll back to top, scroll up, arrow, link to top, back to top, smooth scroll, top, up, back, navigation
-Requires at least: 3.2
-Tested up to: 4.3
-Stable tag: 0.9.1
-Version: 0.9.1
+Requires at least: 3.8
+Tested up to: 4.6
+Stable tag: 1.2
+Version: 1.2
 License: GPLv2 or later
 
-Smooth Scroll Up is a lightweight plugin that creates a customizable "Scroll to top / Back to top" feature in any post/page of your WordPress website.
+Smooth Scroll Up is a lightweight plugin that creates a customizable back to top feature in your WordPress website.
 
 == Description ==
 
-Smooth Scroll Up is a lightweight plugin that creates a customizable "Scroll to top / Back to top" feature in any post/page of your WordPress website.
+Smooth Scroll Up is a lightweight plugin that creates a customizable back to top feature in your WordPress website.
 
 = Features =
-* Choose from different scroll up element types (text link, pill, tab, image)
-* Choose scroll up element position (left, center, right)
+* Choose from different scroll up element types (image, icon, text link, pill, tab)
+* Upload your custom image and set as scroll up element
+* Choose a [FontAwesome](https://fortawesome.github.io/) icon and set as scroll up element
 * Custom text in scroll up element
-* Option to add an on-click event
-* Set distance from top before showing scroll up element
-* Scroll up element animations (fade, slide, none)
-* Enable/disable in mobile devices
+* Choose scroll up element position (left, center, right)
 * Enable/disable in home page
 * Enable/disable in specific posts/pages
-
-= Translations included =
-* Arabic
-* Bulgarian
-* Czech
-* Dutch
-* French
-* German
-* Greek
-* Hungarian
-* Italian
-* Portuguese (Brazil)
-* Romanian
-* Russian
-* Slovak
-* Spanish
-* Swedish
-* Turkish
-
-New translations are very welcome - please submit them via [WP-Translations](http://wp-translations.org/ "WP-Translations").
-This plugin's WP-Translations page is [https://www.transifex.com/projects/p/smooth-scroll-up/](https://www.transifex.com/projects/p/smooth-scroll-up/ "WP-Translations").
+* Enable/disable in mobile devices
+* Scroll up element animations (fade, slide, none)
+* Set distance from top before showing scroll up element
+* Option to add custom CSS and Javascript code
+* Option to add an on-click event
 
 == Installation ==
 
@@ -56,17 +38,9 @@ This plugin's WP-Translations page is [https://www.transifex.com/projects/p/smoo
 
 == Frequently Asked Questions ==
 
-= How many types of "Scroll top top" are there? = 
+= How many types of "Scroll top top" are there? =
 
 There are four types: image, text link, pill and tab.
-
-= How do i choose type? =
-
-Go to "Settings -> "Smooth Scroll Up" and choose the option you want.
-
-= My custom options are gone, why? = 
-
-Since version 0.8.3, we redeveloped the whole options page in order to be compatible with WordPress Settings API. So, you may have to go to options page and set your custom options again.
 
 == Screenshots ==
 
@@ -74,6 +48,29 @@ Since version 0.8.3, we redeveloped the whole options page in order to be compat
 2. Smooth Scroll Up in action
 
 == Changelog ==
+
+= 1.2 =
+* Added option to display the element in a distance from the top (default) or from the bottom of the page
+* Added option to set the scroll speed back to top
+* Added scrollup_filter_show_element_in_admin filter to show the element in WordPress admin pages
+* Fixed issue with hide/display option in specific pages
+* Improved inline style to proper add image type style
+
+= 1.1.1 =
+* Updated Mobile Detect library
+* Added filter to prevent loading font-awesome
+
+= 1.1 =
+* Added FontAwesome icons support
+* Added option to insert custom CSS and JS code
+* Settings page redesign
+
+= 1.0 =
+* Added option to upload custom image
+* Settings page refactoring
+
+= 0.9.2 =
+* Bug fix in show/hide scroll up element from specific posts or pages
 
 = 0.9.1 =
 * Minor bug fix
@@ -187,12 +184,8 @@ Since version 0.8.3, we redeveloped the whole options page in order to be compat
 = 0.3 =
 * Added show in homepage option
 
-= 0.2 = 
+= 0.2 =
 * Script update
 
-= 0.1 = 
+= 0.1 =
 * Initial Release
-
-== Upgrade Notice ==
-
-Initial Release

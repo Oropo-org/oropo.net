@@ -1,3 +1,26 @@
+= 1.2 =
+* Added option to display the element in a distance from the top (default) or from the bottom of the page
+* Added option to set the scroll speed back to top
+* Added scrollup_filter_show_element_in_admin filter to show the element in WordPress admin pages
+* Fixed issue with hide/display option in specific pages
+* Improved inline style to proper add image type style
+
+= 1.1.1 =
+* Updated Mobile Detect library
+* Added filter to prevent loading font-awesome
+
+= 1.1 =
+* Added FontAwesome icons support
+* Added option to insert custom CSS and JS code
+* Settings page redesign
+
+= 1.0 =
+* Added option to upload custom image
+* Settings page refactoring
+
+= 0.9.2 =
+* Bug fix in show/hide scroll up element from specific posts or pages
+
 = 0.9.1 =
 * Minor bug fix
 
@@ -110,8 +133,8 @@
 = 0.3 =
 * Added show in homepage option
 
-= 0.2 = 
+= 0.2 =
 * Script update
 
-= 0.1 = 
+= 0.1 =
 * Initial Release

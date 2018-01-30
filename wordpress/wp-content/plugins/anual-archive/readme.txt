@@ -1,17 +1,17 @@
 === Annual Archive ===
 
 Contributors: twinpictures, baden03
-Donate link: http://plugins.twinpictures.de/plugins/annual-archive/
+Donate link: https://plugins.twinpictures.de/plugins/annual-archive/
 Tags: archive, archives, yearly, monthly, anual, annual, annually, archive by month, archive by year, yearly archive, twinpictures, plugin-oven, pluginoven
-Requires at least: 3.9
-Tested up to: 4.2
-Stable tag: 1.4.4
+Requires at least: 4.5
+Tested up to: 4.9.1
+Stable tag: 1.4.10
 
 Display daily, weekly, monthly or annual archives with a sidebar widget or shortcode.
 
 == Description ==
 
-Annual Archive widget extends default WordPress Archive widget to allow daily, weekly, monthly, yearly, postbypost and alpha archives to be displayed.  Archives can be displyed in the sidebar using a widget, and even in a post or page by using a shortcode. A <a href='http://plugins.twinpictures.de/plugins/annual-archive/documentation/'>complete listing of shortcode options and attribute demos</a> are available, as well as <a href='http://wordpress.org/tags/anual-archive'>free community support</a>. The Annual Archive widget - A better archive widget. The plugin can be translated into any language using our community translation tool at: http://translate.twinpictures.de/projects/anual-archive/
+Annual Archive widget extends default WordPress Archive widget to allow daily, weekly, monthly, yearly, postbypost and alpha archives to be displayed.  Archives can be displayed in the sidebar using a widget, and even in a post or page by using a shortcode. A <a href='https://plugins.twinpictures.de/plugins/annual-archive/documentation/'>complete listing of shortcode options and attribute demos</a> are available, as well as <a href='https://wordpress.org/tags/anual-archive'>free community support</a>. The Annual Archive widget - A better archive widget. The plugin can be translated into any language using our community translation tool at: https://translate.twinpictures.de/projects/anual-archive/
 
 == Installation ==
 
@@ -19,24 +19,24 @@ Annual Archive widget extends default WordPress Archive widget to allow daily, w
 1. Activate the Plugin
 1. Test that the this plugin meets your demanding needs.
 1. Rate the plugin and verify if it works at wordpress.org.
-1. Leave a comment regarding bugs, feature request, cocktail recipes at http://wordpress.org/tags/anual-archive
+1. Leave a comment regarding bugs, feature request, cocktail recipes at https://wordpress.org/tags/anual-archive
 
 == Frequently Asked Questions ==
 
 = What are the shortcode options? =
-A <a href='http://plugins.twinpictures.de/plugins/annual-archive/documentation/'>complete list of shortcode options</a> has been provided.
+A <a href='https://plugins.twinpictures.de/plugins/annual-archive/documentation/'>complete list of shortcode options</a> has been provided.
 
 = Where might one leave feedback, bug-reports and request features? =
-The <a href='http://wordpress.org/tags/anual-archive'>Annual Archive Forum</a> at WordPress.org is one popular choice.
+The <a href='https://wordpress.org/tags/anual-archive'>Annual Archive Forum</a> at WordPress.org is one popular choice.
 
 = How can I translate this plugin in to my mother tongue? =
-By using our open community translation tool: http://translate.twinpictures.de/projects/anual-archive
+By using our open community translation tool: https://translate.twinpictures.de/projects/anual-archive
 
 = I am a Social Netwookiee, do you have a Facebook page? =
-Yes, yes... <a href='http://www.facebook.com/twinpictures'>Twinpictures is on Facebook</a>.
+Yes, yes... <a href='https://www.facebook.com/twinpictures'>Twinpictures is on Facebook</a>.
 
 = Does Twinpictures do the Twitter? =
-Ah yes! <a href='http://twitter.com/#!/twinpictures/'>@twinpictures</a> does the tweeting around here.
+Ah yes! <a href='https://twitter.com/#!/twinpictures/'>@twinpictures</a> does the tweeting around here.
 
 = You know annual is not spelled 'anual' in English, right? =
 We do now, so yes.  And thank you for noticing.
@@ -56,7 +56,32 @@ Scares the crap out of the seeing-eye-dogs.
 
 == Changelog ==
 
-= 1.4.3 =
+= 1.4.10 =
+* tested with WordPress 4.9.1
+
+= 1.4.9 =
+* tested with WordPress 4.7.3
+* updated links to https
+
+= 1.4.8 =
+* added post_type filter
+* tested with WordPress 4.7
+
+= 1.4.7 =
+* added backup shortcode ‘arcpromat’ incase of shortcode conflict with ‘archives’
+* fully tested with WordPress 4.5
+* fully supports WordPress Language Packs, no longer ships with all languages
+
+= 1.4.6 =
+* corrected spelling errors
+* fully tested with WordPress 4.4
+* notice: price increase for 2016 for archive-pro-magic
+ 
+= 1.4.5 =
+* updated widget constructor to php5
+* updated language text domain to work with new WordPress language system
+
+= 1.4.4 =
 * fixed order attribute when using the dropdown select element
 
 = 1.4.3 =
@@ -95,38 +120,4 @@ Scares the crap out of the seeing-eye-dogs.
 * The plugin came to be.
 
 == Upgrade Notice ==
-
-= 1.4.4 =
-* order attribute now works when using option format
-
-= 1.4.3 =
-* updated for WordPress 4.1
-
-= 1.4.2 =
-* added WP4.0 Icons
-
-= 1.4.1 =
-* sort order added
-* added select text to change default initial text of drop-down option 
-
-= 1.4 =
-* Completely rebuilt the plugin using classes
-* Added options page
-* Info on Archive-Pro-Matic that adds category and post-type archives
-* updated .pot language translation file
-* updated french translation
-
-= 1.3 =
-Added missing formats and before and after text inputs included in wp_get_archive
-
-= 1.2 =
-The plugin may now be translated into any language
-
-= 1.1.1 =
-Small Updates, improved documentation, same wicked support.
-
-= 1.1 =
-Shortcode added and options expanded to include all archive types.
-
-= 1.0 =
-Where once there be not, now there be.
+Works 100% with WordPress 4.9.1

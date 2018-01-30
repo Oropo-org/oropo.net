@@ -5,6 +5,8 @@ a.scrollup-image {
     right: 20px;
     width: 38px;
     height: 38px;
+    background-size: 38px 38px;
+    background-repeat: no-repeat;
 }
 
 /* Tab style */
